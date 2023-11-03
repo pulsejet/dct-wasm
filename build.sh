@@ -1,6 +1,7 @@
 #!/bin/bash
 
 set -e
+shopt -s globstar
 
 # Install dependencies
 # sudo apt update
@@ -41,3 +42,8 @@ cp -r tools DCT
 pushd DCT/tools
 make -j$(nproc)
 popd
+
+# Copy built files to dist folder
+rm -rf dist
+mkdir -p dist
+cp DCT/tools/**/*.js DCT/tools/**/*.wasm dist

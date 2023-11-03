@@ -1,0 +1,17 @@
+{
+    "name": "dct-tools",
+    "version": "0.0.1",
+    "license": "GPL-3.0",
+    "description": "WASM build of DCT tools",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/pulsejet/dct-wasm"
+    },
+    "scripts": {
+        "build": "./build.sh"
+    },
+    "files": [
+        "package.json",
+        "dist"
+    ]
+}
