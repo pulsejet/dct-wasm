@@ -3,9 +3,9 @@ CXX = em++
 CXXFLAGS += -O3 -std=c++20 -I../include
 
 CXXFLAGS += \
+	-fwasm-exceptions \
 	-s USE_BOOST_HEADERS=1 \
-	-s EXPORTED_RUNTIME_METHODS=callMain,FS_createDataFile \
-	-s NO_DISABLE_EXCEPTION_CATCHING \
+	-s EXPORTED_RUNTIME_METHODS=callMain,FS \
 	-s ALLOW_MEMORY_GROWTH \
 	-s MODULARIZE \
 	--closure 1

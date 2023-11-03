@@ -33,6 +33,8 @@ fi
 # Clone
 if [ ! -d DCT ]; then
     git clone https://github.com/pulsejet/DCT -b patch-driver
+else
+    rm -rf DCT/**/*.js DCT/**/*.wasm # cleanup
 fi
 
 # Copy our patched files
