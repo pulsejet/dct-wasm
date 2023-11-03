@@ -1,5 +1,5 @@
 {
-    "name": "dct-tools",
+    "name": "dct-wasm",
     "version": "0.0.1",
     "license": "GPL-3.0",
     "description": "WASM build of DCT tools",
