@@ -8,7 +8,7 @@ CXXFLAGS += \
 	-s EXPORTED_RUNTIME_METHODS=callMain,FS \
 	-s ALLOW_MEMORY_GROWTH \
 	-s MODULARIZE \
-	--closure 1
+	-lidbfs.js
 
 CXXFLAGS += -isystem../../libsodium/src/libsodium/include/
 LDFLAGS += -L../../libsodium/src/libsodium/.libs/
